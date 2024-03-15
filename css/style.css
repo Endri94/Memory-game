@@ -1,0 +1,178 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../img/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ----------------- */
+
+.game-title {
+  margin-left: 14%;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.game {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+
+  height: 280px;
+  padding: 30px;
+  font-size: 0;
+  color: transparent;
+  background-image: url(../img/card-hover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-image: url(../img/card-hoverr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.3s ease-in;
+}
+
+.card:active {
+  background-color: brown;
+  transition: background-color 0.3s ease-in;
+}
+
+.open {
+  font-size: 80px;
+  color: rgb(247, 0, 0);
+  font-weight: 800;
+  background-image: url(../img/card-hoverr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: default;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.open:hover {
+  border: 2px solid orange;
+  outline: transparent;
+  transition: border 0.3s ease-in-out;
+}
+
+.open:active {
+  background-color: blue;
+}
+
+
+.success {
+  font-size: 80px;
+  color: rgb(247, 0, 0);
+  font-weight: 800;
+  background-image: url(../img/card-active.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: default;
+  transition: background-image 0.3s ease-in-out;
+  cursor: default;
+}
+
+.success:hover {
+  background-color: rgb(255, 30, 0);
+}
+
+.success:active {
+  background-color: rgb(255, 30, 0);
+}
+
+
+.btn {
+  position: absolute;
+  display: block;
+  left: 40%;
+  padding: 10px 17px;
+  color: blue;
+  font-size: 20px;
+  font-weight: 800;
+  font-weight: 700;
+  background-color: #e8f800cc;
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out
+}
+
+.btn:active {
+  opacity: 1;
+  border: 5px solid black;
+  background-color: #f9f9f9;
+  color: green;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+.title {
+  margin: 0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 48px;
+  -webkit-text-stroke: 1px #05ff05;    /* Толщина и цвет обводки */
+}
+
+.personal-sign {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.my-name {
+  color: #ffffff;
+  -webkit-text-stroke: 1px #7105ff; /* Толщина и цвет обводки */
+}
