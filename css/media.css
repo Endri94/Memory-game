@@ -1,0 +1,7 @@
+@media(max-width: 520px) {
+  .card {
+    height: 220px;
+    flex-basis: 158px;
+  }
+
+}
